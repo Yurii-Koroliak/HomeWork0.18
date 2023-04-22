@@ -9,7 +9,7 @@ form.addEventListener('submit', function(event) {
   const title = titleInput.value;
   const type = typeSelect.value;
 
-  let apiUrl = 'http://www.omdbapi.com/?s=' + encodeURIComponent(title);
+  let apiUrl = 'https://www.omdbapi.com/?s=' + encodeURIComponent(title);
   if (type) {
     apiUrl += '&type=' + encodeURIComponent(type);
   }
@@ -34,8 +34,8 @@ fetch(apiUrl)
         movieList.innerHTML = '<p>Movie not found!</p>';
     }
     })
-    .catch(function(error) {
-      movieList.innerHTML = '<p>Error searching for movie.</p>';
-    });
+.catch(function(error) {
+    movieList.innerHTML = '<p>Error searching for movie.</p>';
+});
 });
 
