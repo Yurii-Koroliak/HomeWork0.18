@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="search-movie">
+        <form id="movie-form">
+    
+          <input type="text" id="movie-title" name="movie-title">
+    
+    
+          <select id="movie-type" name="movie-type">
+            <option value="">Any</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+          </select>
+    
+          <button type="submit">Search</button>
+        </form>
+    
+        <div id="movie-list"></div>
+    </div>
+
+    <script src="./resources/main.js"></script>
+</body>
+</html>
